@@ -1,10 +1,10 @@
 Consider the following site: https://openlibrary.org
-Write automation tests for the  lists api, using Python, Pytest and POM:
+Write automation tests for the  lists api, using Python, Pytest and POM
 1. Create a list via api
 2. Approve that the list exists via UI
 3. Delete the list via api
-4. Description.Test Project QA Automation for OpenLibrary (Pytest, Selenium, RestAPI)
 
+Description.Test Project QA Automation for OpenLibrary (Pytest, Selenium, RestAPI)
 Video introduction in Hebrew is here: https://drive.google.com/drive/folders/1TX07rSlt8yoNiqi0BteW0nbbWNlSRxzA
 
 .env   - Environment Variables
