@@ -39,7 +39,7 @@ class TestListsAPI:
         # Unpack the tuple
         json_lists_object, json_list_strategy = json_data
         
-        # Handle cases where either is None due to zip_longest
+        # Handle cases where either is None due to zip_longest OK
         if json_lists_object is None:
             pytest.skip("No corresponding json_lists_object available.")
         
