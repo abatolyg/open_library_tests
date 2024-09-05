@@ -1,0 +1,9 @@
+[
+    {
+        "create": "lists_api",
+        "approve": "lists_page",
+        "delete": "lists_api"
+    }
+]
+
+

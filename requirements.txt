@@ -1,0 +1,8 @@
+requests==2.26.0
+pytest==7.3.1
+selenium==4.9.0
+webdriver-manager==3.8.6
+pytest-html==3.2.0
+pytest-logger==0.5.1
+cryptography=43.0.0
+python-dotenv=1.0.0

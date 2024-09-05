@@ -1,0 +1,20 @@
+[
+    {
+        "name": "18th Century Architecture for Melisa",
+        "description": "Studies of architectural practice, mainly English works",
+        "tags": ["Architecture", "18th Century", "Drawings", "Buildings"],
+        "seeds": [
+            "/books/OL1M",
+            "/subjects/gothic_architecture"
+        ]
+    },
+    {
+        "name": "19th Century Architecture for Lynda",
+        "description": "Architectural evolution during the 19th century in Europe",
+        "tags": ["Architecture", "19th Century", "Drawings", "Buildings"],
+        "seeds": [
+            "/books/OL2M",
+            "/subjects/neo_gothic_architecture"
+        ]
+    }
+]

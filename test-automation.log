@@ -1,0 +1,38 @@
+2024-09-03 22:00:09,327 - open_library_tests.tests.conftest - INFO - Initializing chrome driver
+2024-09-03 22:00:10,844 - pages.base - INFO - BasePage initialized with driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="08dbd04be6dd9780e6a67f34b5ffd955")>
+2024-09-03 22:00:10,845 - open_library_tests.tests.test_listsapi - INFO - ===Test started. create, approve, and delete list
+2024-09-03 22:00:12,875 - api.base - INFO - Login successful!
+2024-09-03 22:00:12,876 - api.base - INFO - Creating list: {'name': '18th Century Architecture for Melisa', 'description': 'Studies of architectural practice, mainly English works', 'tags': ['Architecture', '18th Century', 'Drawings', 'Buildings'], 'seeds': ['/books/OL1M', '/subjects/gothic_architecture']}
+2024-09-03 22:00:14,256 - api.base - INFO - List created successfully. key: /people/anatolyg/lists/OL266079L
+2024-09-03 22:00:14,257 - tests.test_strategy_listinterface - INFO - ==== Task 1 Completed. List created successfully by API
+2024-09-03 22:00:14,257 - pages.base - INFO - login_page start
+2024-09-03 22:00:25,338 - pages.base - INFO - press_my_lists start
+2024-09-03 22:00:27,543 - pages.base - INFO - my_list_details
+2024-09-03 22:00:29,733 - pages.base - INFO - my_list_details
+2024-09-03 22:00:29,757 - pages.base - INFO - my_list_details
+2024-09-03 22:00:29,758 - pages.base - INFO - close start
+2024-09-03 22:00:29,869 - tests.test_strategy_listinterface - INFO - ==== Task 2 Completed. approve_list_created_by_ui
+2024-09-03 22:00:29,869 - api.base - INFO - Deleting list with ID: /people/anatolyg/lists/OL266079L
+2024-09-03 22:00:31,187 - api.base - INFO - List deleted successfully
+2024-09-03 22:00:31,189 - tests.test_strategy_listinterface - INFO - ==== Task 3 Completed. delete_list_by_api
+2024-09-03 22:00:31,189 - open_library_tests.tests.test_listsapi - INFO - ===Test completed. create, approve, and delete list
+2024-09-03 22:00:31,190 - open_library_tests.tests.conftest - INFO - Quitting driver
+2024-09-03 22:00:37,250 - open_library_tests.tests.conftest - INFO - Initializing chrome driver
+2024-09-03 22:00:38,684 - pages.base - INFO - BasePage initialized with driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="5f3d24a25fb9259b76c890cf034bf955")>
+2024-09-03 22:00:38,684 - open_library_tests.tests.test_listsapi - INFO - ===Test started. create, approve, and delete list
+2024-09-03 22:00:40,209 - api.base - INFO - Login successful!
+2024-09-03 22:00:40,213 - api.base - INFO - Creating list: {'name': '19th Century Architecture for Lynda', 'description': 'Architectural evolution during the 19th century in Europe', 'tags': ['Architecture', '19th Century', 'Drawings', 'Buildings'], 'seeds': ['/books/OL2M', '/subjects/neo_gothic_architecture']}
+2024-09-03 22:00:41,515 - api.base - INFO - List created successfully. key: /people/anatolyg/lists/OL266083L
+2024-09-03 22:00:41,521 - tests.test_strategy_listinterface - INFO - ==== Task 1 Completed. List created successfully by API
+2024-09-03 22:00:41,522 - pages.base - INFO - login_page start
+2024-09-03 22:00:55,521 - pages.base - INFO - press_my_lists start
+2024-09-03 22:00:57,094 - pages.base - INFO - my_list_details
+2024-09-03 22:01:09,831 - pages.base - INFO - my_list_details
+2024-09-03 22:01:09,853 - pages.base - INFO - my_list_details
+2024-09-03 22:01:09,853 - pages.base - INFO - close start
+2024-09-03 22:01:09,922 - tests.test_strategy_listinterface - INFO - ==== Task 2 Completed. approve_list_created_by_ui
+2024-09-03 22:01:09,922 - api.base - INFO - Deleting list with ID: /people/anatolyg/lists/OL266083L
+2024-09-03 22:01:11,227 - api.base - INFO - List deleted successfully
+2024-09-03 22:01:11,228 - tests.test_strategy_listinterface - INFO - ==== Task 3 Completed. delete_list_by_api
+2024-09-03 22:01:11,228 - open_library_tests.tests.test_listsapi - INFO - ===Test completed. create, approve, and delete list
+2024-09-03 22:01:11,230 - open_library_tests.tests.conftest - INFO - Quitting driver
