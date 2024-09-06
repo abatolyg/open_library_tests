@@ -27,7 +27,7 @@ class TestListsAPI:
     def lists_page(self, driver):
         return ListsPage(driver)
     
-    @pytest.mark.parametrize("json_index", range(len(json_lists_objects)))
+    @pytest.mark.parametrize("json_index", range(len(json_lists_objects)), ids=[obj['name'] for obj in json_lists_objects])
     def test_list_create_api_approve_ui_delete_api(self,json_index,lists_api,lists_page):
 
         json_lists_object = json_lists_objects[json_index]
@@ -49,4 +49,5 @@ class TestListsAPI:
         # Now you have both json_lists_object and json_list_strategy available
         test_strategy = TestStrategyListsInterface()
         test_strategy.test_list_create_approve_delete_with_stratey_list(json_lists_object,lists_api,lists_page,json_list_strategy)
+
                  
