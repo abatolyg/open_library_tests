@@ -16,8 +16,18 @@ class TestStrategyListsInterface:
     def __init__(self):
         super().__init__()
 
-    def  test_list_create_approve_delete(self,json_lists_object,icreate,iappove,idelete):
 
+    def test_list_create_approve_delete(self, json_lists_object, icreate, iappove, idelete):
+        """
+        Test the process of creating, approving, and deleting a list.
+        Args:
+                json_lists_object: The JSON object containing the list information.
+                icreate: The parameter for creating the list.
+                iappove: The parameter for approving the list.
+                idelete: The parameter for deleting the list.
+        Returns:
+                None
+        """
         logger.info("===Test started. create, approve, and delete list. ")
 
         # 1. Create list by REST api using HTTP Client Post
@@ -31,8 +41,17 @@ class TestStrategyListsInterface:
 
         logger.info("===Test completed. create, approve, and delete list")        
 
-    def  test_list_create_approve_delete_with_stratey_list(self,json_lists_object,lists_api,lists_page,json_list_strategy):        
-     
+    def test_list_create_approve_delete_with_stratey_list(self, json_lists_object, lists_api, lists_page, json_list_strategy):        
+        """
+        Test the creation, approval, and deletion of a list using a strategy list.
+        Args:
+            json_lists_object (object): The JSON object containing the list data.
+            lists_api (object): The API object for performing list operations.
+            lists_page (object): The page object for performing list operations.
+            json_list_strategy (object): The JSON object containing the list strategy.
+        Returns:
+            None
+        """
         logger.info("===Test started. create, approve, and delete list")           
         
         operations = {"create": lists_api,"approve": lists_api,"delete": lists_api}
@@ -62,7 +81,7 @@ class TestStrategyListsInterface:
 
         return list_object
         
-    def approve_list_created(self, lists_interface, list_object):
+    def approve_list_created(self,lists_interface, list_object):
 
         # 2. approve_list_created via lists_interface
         list_object_ret_val = lists_interface.get_list_object(list_object)  
@@ -75,7 +94,7 @@ class TestStrategyListsInterface:
 
         logger.info("==== Task 2 Completed. approve_list_created_by_ui")
 
-    def delete_list(self, lists_interface, list_object):
+    def delete_list(self,lists_interface,list_object):
 
          # 3. delete_list via lists_interface
         success = lists_interface.delete_list(list_object)

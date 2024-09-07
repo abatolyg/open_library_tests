@@ -32,6 +32,19 @@ def get_driver_with_param(browser):
 #Scope function and not session - new WebDriver instance at the start of each test function and properly quit it after the test is complete.
 @pytest.fixture(params=["chrome", "firefox"],scope="function")
 def driver(request):
+    """
+    Fixture for initializing and quitting the driver.
+
+    Parameters:
+    - request: The request object containing information about the test.
+
+    Returns:
+    - driver: The initialized driver.
+
+    Usage:
+    @pytest.fixture(params=["chrome", "firefox"], scope="function")
+        ...
+    """
     logger.info(f"Initializing {request.param} driver")
     driver = get_driver_with_param(request.param)
     driver.implicitly_wait(Config.WAIT_FOR_WEB_ELEMENT_TIMEOUT)

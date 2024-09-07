@@ -29,13 +29,30 @@ class TestListsAPI:
     
     @pytest.mark.parametrize("json_index", range(len(json_lists_objects)), ids=[obj['name'] for obj in json_lists_objects])
     def test_list_create_api_approve_ui_delete_api(self,json_index,lists_api,lists_page):
+        """
+            Test the list creation, approval, UI interaction, and deletion API.
+            Args:
+                json_index (int): The index of the JSON object to use for the test.
+                lists_api (ListsAPI): An instance of the ListsAPI class.
+                lists_page (ListsPage): An instance of the ListsPage class.
+
+            Returns:
+                None
+            """
 
         json_lists_object = json_lists_objects[json_index]
-        test_strategy = TestStrategyListsInterface()
-        test_strategy.test_list_create_approve_delete(json_lists_object,lists_api,lists_page,lists_api)     
+        TestStrategyListsInterface().test_list_create_approve_delete(
+            json_lists_object,lists_api,lists_page,lists_api)     
     
     @pytest.mark.parametrize("json_data", json_data_pairs)
     def test_list_create_approve_delete_by_List_strategy(self, json_data, lists_api, lists_page):
+        """
+        Test the create, approve, and delete operations using the List strategy.
+        Args:
+            json_data: A tuple containing the json_lists_object and json_list_strategy.
+            lists_api: An instance of the ListsAPI class.
+            lists_page: An instance of the ListsPage class.
+        """
         # Unpack the tuple
         json_lists_object, json_list_strategy = json_data
         
@@ -47,7 +64,7 @@ class TestListsAPI:
             pytest.skip("No corresponding json_list_strategy available.")     
    
         # Now you have both json_lists_object and json_list_strategy available
-        test_strategy = TestStrategyListsInterface()
-        test_strategy.test_list_create_approve_delete_with_stratey_list(json_lists_object,lists_api,lists_page,json_list_strategy)
+        TestStrategyListsInterface().test_list_create_approve_delete_with_stratey_list(
+            json_lists_object,lists_api,lists_page,json_list_strategy)
 
                  

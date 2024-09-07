@@ -25,7 +25,7 @@ class ListsDetailsPage(BasePage):
 
     def get_list_name(self,list_key):
 
-        self.logger.info("my_list_details")
+        self.logger.info("my_list_detail start")
         # Find the element on detailed page with the class "details-title"
         title_element = self.driver.find_element(*self.LIST_DETAILS_TITLE_LOCATOR)
 
@@ -34,6 +34,6 @@ class ListsDetailsPage(BasePage):
 
         list_object = ListObject(list_key, json_list_object.to_json()) 
 
-        self.logger.info("my_list_details")
+        self.logger.info("my_list_details end")
 
         return list_object  
