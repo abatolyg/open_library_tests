@@ -25,14 +25,22 @@ LOG_FILE_PATH=C:\logs\automation.log
 Details
 
 1. Test Name: test_create_approve_and_delete_list
+
 2. The same test is executed with different parameters several times using  pytest.mark.parametrize
+It is DecoratorDesign Pattern implemented using Pytest
  @pytest.mark.parametrize("json_index", range(len(json_lists_objects)))
  def test_create_approve_and_delete_list(self,json_index,lists_api,lists_page):
+
 3. Test Parameters: json_lists_objects - taken from TEST_DATA_SOURCE
+The concept also known Data-driven  approach.
+
 4. TEST_DATA_SOURCE_TYPE:file / or database
+
 5. TEST_DATA_FILE_PATH default: testsdata/test_data.json
 DataSource class implements a Singleton Design pattern - 
 return JSON data either from a file or from a database’ based on configuration.
+Also WebDrive is a good candidate for Singleton Pattern.
+
 6. Json_lists_objects are passed to the test_create_approve_and_delete_list
 Test_data.json file example
 [
